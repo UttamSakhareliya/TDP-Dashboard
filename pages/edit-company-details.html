@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Comapny Details</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="../assets/css/remixicon.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- <div class="back-layer"></div> -->
+    <div class="row top-header align-items-center">
+        <div class="back-layer"></div>
+
+        <div class="col-6">
+            <img src="../assets/images/logo.png" alt="">
+        </div>
+
+        <div class="col-6">
+            <ul class="d-flex justify-content-end align-items-center user-ul">
+                <li>
+                    <a href="#"><img src="../assets/images/bell.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../assets/images/cart.svg" alt=""></a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a href="#"><img src="../assets/images/user.svg" alt=""></a>
+                </li>
+                <li class="d-lg-none" id="NavIcon">
+                    <a href="#">
+                        <img src="../assets/images/menu-icon.svg" alt="" class="img-fluid">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="d-flex">
+        <!-- Side Nav -->
+        <section>
+            <div class="side-nav">
+                <div class="side-nav-menu">
+                    <ul class="menu">
+                        <li class="">
+                            <a href="#">
+                                <img src="../assets/images/home.svg" alt="">
+                                <img src="../assets/images/home-sky.svg" alt="" class="d-none">
+                                <h6>Home</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Search.html">
+                                <img src="../assets/images/search.svg" alt="">
+                                <img src="../assets/images/search-sky.svg" alt="" class="d-none">
+                                <h6>Search</h6>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/like.svg" alt="">
+                                <img src="../assets/images/like-sky.svg" alt="" class="d-none">
+                                <h6>Favorite</h6>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/note.svg" alt="">
+                                <img src="../assets/images/order-sky.svg" alt="" class="d-none">
+                                <h6>order</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/save.svg" alt="">
+                                <img src="../assets/images/save-sky.svg" alt="" class="d-none">
+                                <h6>save</h6>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/setting.svg" alt="">
+                                <img src="../assets/images/setting-sky.svg" alt="" class="d-none">
+                                <h6>setting</h6>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/logout.svg" alt="">
+                                <img src="../assets/images/logout-sky.svg" alt="" class="d-none">
+                                <h6>Log Out</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Body -->
+        <div class="w-100 Profile EditProfile">
+            <div class="row">
+                <div class="col-12 col-md-3 Profile-menu p-0 d-none d-md-block">
+                    <div class="navs">
+                        <ul>
+                            <li class="ProfileDetails">
+                                <a href="profile.html">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/profile-details.svg" alt="">
+                                        Profile Details
+                                        <img src="../assets/images/arrow-right.svg" alt="" class="ms-auto d-md-none">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="PasswordSettings">
+                                <a href="password-setting.html">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/password-setting.svg" alt="">
+                                        Password Settings
+                                        <img src="../assets/images/arrow-right.svg" alt="" class="ms-auto d-md-none">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=" CompanyDetails active-card">
+                                <a href="company-details.html">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/company-details.svg" alt="">
+                                        Company Details
+                                        <img src="../assets/images/arrow-right.svg" alt="" class="ms-auto d-md-none">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="UserManagement">
+                                <a href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/user-managment.svg" alt="">
+                                        User Management
+                                        <img src="../assets/images/arrow-right.svg" alt="" class="ms-auto d-md-none">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ShippingAddresses">
+                                <a href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/shipping-address.svg" alt="">
+                                        Shipping Addresses
+                                        <img src="../assets/images/arrow-right.svg" alt="" class="ms-auto d-md-none">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="Security">
+                                <a href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/security.svg" alt="">
+                                        Security
+                                        <img src="../assets/images/arrow-right.svg" alt="" class="ms-auto d-md-none">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 Edit-profile-back d-md-none">
+                    <a href="profile.html"><img src="../assets/images/arrow-left-mob.svg" alt="" class="me-3"> Edit
+                        Company Details</a>
+                </div>
+
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="contents">
+                        <!-- ProfileDetails -->
+                        <div class="content-ProfileDetails profile-div show">
+                            <div class="row DETAILS">
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <h3>EDIT COMPANY DETAILS</h3>
+
+                                    <ul class="profile-change-btn">
+                                        <li>
+                                            <a href="#">Discard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Save</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row mt-5 mt-md-0">
+                                <div class="col-auto mx-auto">
+                                    <div class="user-iamges position-relative">
+                                        <img src="../assets/images/company-img.png" alt="" class="img-fluid">
+                                        <a href="#" class="edit-user-img">
+                                            <img src="../assets/images/edit-icon.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto edit-form">
+                                    <div class="row align-items-center">
+                                        <!-- Company Name -->
+                                        <div class="col-12 input-col">
+                                            <label for="#" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" value="ALPHA DIAMONDS INC.">
+                                        </div>
+
+                                        <!-- Company Email -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label for="#" class="form-label">Company Email</label>
+                                            <input type="email" class="form-control" value="Exampleemail@gmail.com">
+                                        </div>
+
+                                        <!-- Website -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label for="#" class="form-label">Website</label>
+                                            <input type="text" class="form-control" value="www.example123.com">
+                                        </div>
+
+                                        <!-- Company Address -->
+                                        <div class="col-12 input-col">
+                                            <label for="#" class="form-label">Company Address</label>
+                                            <input type="address" class="form-control"
+                                                value="Lorem Ipsum is simply dummy text of the printing.">
+                                        </div>
+
+                                        <!-- Country -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label class="form-label">Country</label>
+                                            <select class="w-100">
+                                                <option value="">INDIA</option>
+                                                <option value="">USA</option>
+                                                <option value="">UK</option>
+                                                <option value="">LONDON</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- State -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label class="form-label">State</label>
+                                            <select class="w-100">
+                                                <option value="">Gujrat</option>
+                                                <option value="">Mumbai</option>
+                                                <option value="">Delhi</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Registration Number -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label for="#" class="form-label">Registration Number</label>
+                                            <input type="text" class="form-control" value="25HTH58H">
+                                        </div>
+
+                                        <!-- Registration Document -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label for="#" class="form-label">Registration Document</label>
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                        </div>
+
+                                        <!-- Director Name -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label for="#" class="form-label">Director Name</label>
+                                            <input type="text" class="form-control" value="John Wilimson">
+                                        </div>
+
+                                        <!-- Director Contact -->
+                                        <div class="col-12 col-md-6 input-col">
+                                            <label for="#" class="form-label">Director Contact</label>
+                                            <input type="number" class="form-control" value="919988667755">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jquery-3.6.0 -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Coustam js -->
+    <script src="../assets/js/script.js"></script>
+
+
+</body>
+
+</html>

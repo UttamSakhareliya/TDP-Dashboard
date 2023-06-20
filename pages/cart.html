@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MY Cart</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="../assets/css/remixicon.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- <div class="back-layer"></div> -->
+    <div class="row top-header align-items-center">
+      <div class="back-layer"></div>
+
+      <div class="col-6">
+        <img src="../assets/images/logo.png" alt="" />
+      </div>
+
+      <div class="col-6">
+        <ul class="d-flex justify-content-end align-items-center user-ul">
+          <li>
+            <a href="#"><img src="../assets/images/bell.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../assets/images/cart.svg" alt="" /></a>
+          </li>
+          <li class="d-none d-lg-block">
+            <a href="#"><img src="../assets/images/user.svg" alt="" /></a>
+          </li>
+          <li class="d-lg-none" id="NavIcon">
+            <a href="#">
+              <img
+                src="../assets/images/menu-icon.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="d-flex">
+      <!-- Side Nav -->
+      <section>
+        <div class="side-nav">
+          <div class="side-nav-menu">
+            <ul class="menu">
+              <li class="">
+                <a href="#">
+                  <img src="../assets/images/home.svg" alt="" />
+                  <img
+                    src="../assets/images/home-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Home</h6>
+                </a>
+              </li>
+              <li>
+                <a href="Search.html">
+                  <img src="../assets/images/search.svg" alt="" />
+                  <img
+                    src="../assets/images/search-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Search</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/like.svg" alt="" />
+                  <img
+                    src="../assets/images/like-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Favorite</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/note.svg" alt="" />
+                  <img
+                    src="../assets/images/order-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>order</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/save.svg" alt="" />
+                  <img
+                    src="../assets/images/save-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>save</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/setting.svg" alt="" />
+                  <img
+                    src="../assets/images/setting-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>setting</h6>
+                </a>
+              </li>
+            </ul>
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <img src="../assets/images/logout.svg" alt="" />
+                  <img
+                    src="../assets/images/logout-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Log Out</h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Body -->
+      <div class="w-100 MyCart">
+        <div class="row justify-content-between">
+          <div class="cart-col p-0">
+            <div class="cart-gradient">
+              <h3>My Cart</h3>
+            </div>
+            <div class="row">
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 cart-diamond-items">
+                <div class="diamond-details">
+                  <div class="diamond-image">
+                    <img
+                      src="../assets/images/list-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+
+                  <div class="cart-d-details">
+                    <h4>
+                      Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG Faint
+                    </h4>
+
+                    <ul class="TRD">
+                      <li class="TRD-items">
+                        <img
+                          src="../assets/images/video-play.svg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <img
+                          src="../assets/images/country-flag.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                        <span>DK/A/5879</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>T:</p>
+                        <span>60.5%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>R:</p>
+                        <span>61.1%</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>D:</p>
+                        <span>1 : 1.25</span>
+                      </li>
+                      <li class="TRD-items">
+                        <p>M:</p>
+                        <span>5.35 * 5.37 * 3.29</span>
+                      </li>
+                    </ul>
+
+                    <ul class="TRD TRD-2">
+                      <li class="TRD-items">
+                        <p>SKU:</p>
+                        <span>17205</span>
+                      </li>
+
+                      <li>
+                        <a href="#" class="view-remove">View</a>
+                        <a href="#" class="view-remove me-0">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="diamond-price">
+                  <ul class="GIA-percentage">
+                    <li class="GIAMARK">
+                      <img
+                        src="../assets/images/gia-mark.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </li>
+
+                    <li class="percentage">
+                      <span>-12%</span>
+                    </li>
+                  </ul>
+                  <div class="CD-Price text-end">
+                    <p>₹/CT ₹1568.02</p>
+                    <h3>₹/CT ₹1568.02</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="CheckOut-col">
+            <div class="summary-checkout-box">
+              <div class="ordersummary-col">
+                <div class="summary-box">
+                  <h3>Order Summary</h3>
+                  <div class="row">
+                    <div class="col-12 orderdetails-table">
+                      <table class="w-100">
+                        <tbody>
+                          <tr>
+                            <td colspan="4">Total :</td>
+                            <td colspan="4">₹5,83,300.99</td>
+                          </tr>
+                          <tr>
+                            <td colspan="4">Discount :</td>
+                            <td colspan="4">-₹58,300</td>
+                          </tr>
+                          <tr>
+                            <td colspan="4">Tax :</td>
+                            <td colspan="4">₹3750</td>
+                          </tr>
+                          <tr>
+                            <td colspan="4">Additional Charge :</td>
+                            <td colspan="4">₹580</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="col-12 promocode">
+                      <label for="#" class="form-label">Enter Promocode</label>
+                      <form class="input-col">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="promocode"
+                          placeholder="Promo code"
+                        />
+                        <input
+                          type="submit"
+                          class="form-control"
+                          value="Submit"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 orderdetails-table Ordertotal-Table">
+                    <table class="w-100">
+                      <tbody>
+                        <tr>
+                          <td colspan="4">Order Total :</td>
+                          <td colspan="4">₹5,83,300.99</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkOUT-btn">
+                <a href="#">Check out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery-3.6.0 -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Coustam js -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

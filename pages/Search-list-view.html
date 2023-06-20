@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Search diamond</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+  <!-- Remixicon -->
+  <link rel="stylesheet" href="../assets/css/remixicon.css" />
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- <div class="back-layer"></div> -->
+  <div class="row top-header align-items-center">
+    <div class="back-layer"></div>
+
+    <div class="col-6">
+      <img src="../assets/images/logo.png" alt="" />
+    </div>
+
+    <div class="col-6">
+      <ul class="d-flex justify-content-end align-items-center user-ul">
+        <li>
+          <a href="#"><img src="../assets/images/bell.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../assets/images/cart.svg" alt="" /></a>
+        </li>
+        <li class="d-none d-lg-block">
+          <a href="#"><img src="../assets/images/user.svg" alt="" /></a>
+        </li>
+        <li class="d-lg-none" id="NavIcon">
+          <a href="#">
+            <img src="../assets/images/menu-icon.svg" alt="" class="img-fluid" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="d-flex">
+    <!-- Side Nav -->
+    <section>
+      <div class="side-nav">
+        <div class="side-nav-menu">
+          <ul class="menu">
+            <li class="">
+              <a href="#">
+                <img src="../assets/images/home.svg" alt="" />
+                <img src="../assets/images/home-sky.svg" alt="" class="d-none" />
+                <h6>Home</h6>
+              </a>
+            </li>
+            <li>
+              <a href="Search.html" class="menu-active">
+                <img src="../assets/images/search.svg" alt="" />
+                <img src="../assets/images/search-sky.svg" alt="" class="d-none" />
+                <h6>Search</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/like.svg" alt="" />
+                <img src="../assets/images/like-sky.svg" alt="" class="d-none" />
+                <h6>Favorite</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/note.svg" alt="" />
+                <img src="../assets/images/order-sky.svg" alt="" class="d-none" />
+                <h6>order</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/save.svg" alt="" />
+                <img src="../assets/images/save-sky.svg" alt="" class="d-none" />
+                <h6>save</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/setting.svg" alt="" />
+                <img src="../assets/images/setting-sky.svg" alt="" class="d-none" />
+                <h6>setting</h6>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu">
+            <li>
+              <a href="#">
+                <img src="../assets/images/logout.svg" alt="" />
+                <img src="../assets/images/logout-sky.svg" alt="" class="d-none" />
+                <h6>Log Out</h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Body -->
+    <div class="SearchList-View">
+      <section class="Dashboard-body Search-Diamond pb-0">
+        <form action="#" name="diamondsearch">
+          <!-- Natural Diamonds (1,283,751) -->
+          <div class="row">
+            <div class="col-12 d-xl-flex align-items-center justify-content-between">
+              <ul class="DashbordFilter">
+                <li class="NaturalDiamonds">
+                  <div class="boxed">
+                    <input type="radio" id="NDiamonds" name="skills" checked />
+                    <label for="NDiamonds">Natural Diamonds
+                      <span class="d-none d-sm-block">(1,283,751)</span></label>
+
+                    <input type="radio" id="LabDiamonds" name="skills" />
+                    <label for="LabDiamonds">Lab Grown Diamonds</label>
+                  </div>
+                </li>
+              </ul>
+              <ul class="DashbordFilter justify-content-center justify-content-lg-start justify-content-xl-between">
+                <li class="Modify-search">
+                  <a href="Dashboard.html">Modify Search</a>
+                </li>
+
+                <li class="Discount position-relative">
+                  <select class="select" name="discount">
+                    <option value="#">Discount (High to low)</option>
+                    <option value="#">50%</option>
+                    <option value="#">60%</option>
+                    <option value="#">70%</option>
+                    <option value="#">45%</option>
+                  </select>
+                  <img src="../assets/images/arrow-down.svg" alt="" />
+                </li>
+
+                <li class="Imagevideo d-none d-lg-block">
+                  <ul class="boxed">
+                    <li>
+                      <input type="radio" id="image" name="Image" checked />
+                      <label for="image">
+                        <img src="../assets/images/grid-view.svg" alt="" class="img-fluid videoLightGrey" />
+                        <img src="../assets/images/grid-view-active.svg" alt="" class="img-fluid videoblue" />
+                        <span>Grid View</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="Video" name="Image" />
+                      <label for="Video">
+                        <img src="../assets/images/list-view.svg" alt="" class="img-fluid videoLightGrey" />
+
+                        <img src="../assets/images/list-view-active.svg" alt="" class="img-fluid videoblue" />
+                        <span>List View</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="AdvanceFilter d-none d-lg-block">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span class="red-dots"></span>
+                    Advance Filter</a>
+                </li>
+                <li class="AdvanceFilter d-lg-none">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../assets/images/advance-filter-icon.svg" alt="" class="img-fluid" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+
+
+        <div class="row table-row">
+          <div class="col-12">
+            <div class="ListView-Table position-relative">
+              <table class="table">
+                <thead class="ListView-Thead ">
+                  <tr>
+                    <th>
+                      <div class="form-check">
+
+                        <input class="form-check-input" type="checkbox" value="">
+                      </div>
+                    </th>
+                    <th>
+                      <span class="MEDIA-image">MEDIA</span>
+                    </th>
+
+                    <th>
+                      <span>SKU</span>
+                    </th>
+
+                    <th>
+                      <span>SHAPE</span>
+                    </th>
+
+                    <th>
+                      <span>SIZE</span>
+                    </th>
+
+                    <th>
+                      <span>COLOR</span>
+                    </th>
+
+                    <th>
+                      <span>CLARITY</span>
+                    </th>
+
+                    <th>
+                      <span>CUT</span>
+                    </th>
+
+                    <th>
+                      <span>POL</span>
+                    </th>
+
+                    <th>
+                      <span>SYM</span>
+                    </th>
+
+                    <th>
+                      <span>FLOUR</span>
+                    </th>
+
+                    <th>
+                      <span>LAB</span>
+                    </th>
+
+                    <th>
+                      <span>REPORT NO.</span>
+                    </th>
+
+                    <th>
+                      <span>TABLE</span>
+                    </th>
+
+                    <th>
+                      <span>DEPTH</span>
+                    </th>
+
+                    <th>
+                      <span>RATIO</span>
+                    </th>
+
+                    <th>
+                      <span>MEASUREMENTS</span>
+                    </th>
+
+                    <th>
+                      <span>PRICE</span>
+                    </th>
+
+                    <th>
+                      <span>$/CT</span>
+                    </th>
+
+                    <th>
+                      <span>DISCOUNT</span>
+                    </th>
+
+                  </tr>
+                </thead>
+
+                <tbody class="ListView-Tbody" id="tableDataTr">
+                  <!-- <tr class="list-tr" data-a11y-toggle="expandable-row-1">
+                    <td>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="MEDIA-image">
+                        <img src="../assets/images/round-tabel.png" alt="" class="img-fluid table-diamone">
+                        <img src="../assets/images/india-flag.png" alt="" class="img-fluid table-flag">
+                        <img src="../assets/images/video-play.svg" alt="" class="img-fluid table-video">
+                      </div>
+                    </td>
+
+                    <td>
+                      <span>17305</span>
+                    </td>
+                    <td>
+                      <span>Round</span>
+                    </td>
+                    <td>
+                      <span>0.18</span>
+                    </td>
+                    <td>
+                      <span>D</span>
+                    </td>
+                    <td>
+                      <span>Sl1</span>
+                    </td>
+                    <td>
+                      <span>EX</span>
+                    </td>
+                    <td>
+                      <span>EX</span>
+                    </td>
+                    <td>
+                      <span>EX</span>
+                    </td>
+                    <td>
+                      <span>NON</span>
+                    </td>
+                    <td>
+                      <span>GIA</span>
+                    </td>
+                    <td class="reportno">
+                      <span>6405486221</span>
+                    </td>
+                    <td>
+                      <span>57%</span>
+                    </td>
+                    <td>
+                      <span>59.7%</span>
+                    </td>
+                    <td>
+                      <span>0.99</span>
+                    </td>
+                    <td>
+                      <span>3.69*3.72*2.21</span>
+                    </td>
+                    <td class="price">
+                      <span>₹5,83,300.99</span>
+                    </td>
+                    <td>
+                      <span>₹1,568.02</span>
+                    </td>
+                    <td>
+                      <span>42.55%</span>
+                    </td>
+                  </tr> -->
+
+                  <!--Click To open Tr Diamond View -->
+                  <!-- <tr id="expandable-row-1" class="expandable-row">
+                    <td class="table__cell" colspan="20">
+                      <ul class="slide-ul">
+                        <li class="pro-view">
+                          <div class="card-image position-relative h-75">
+                            <img src="../assets/images/card-diamond-round.png" alt="" class="img-fluid">
+                            <div class="Available-Label">
+                              <span></span>
+                              <p>Available</p>
+                            </div>
+                            <ul class="haeart-ul">
+                              <li class="heart-items">
+                                <a class="prolike">
+                                  <img src="../assets/images/like-line.svg" alt="" class="img-fluid like-line">
+                                  <img src="../assets/images/like-fill.svg" alt="" class="img-fluid like-fill">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="Stock-li">
+                            <div class="StockNo">
+                              <p>Stock No. :</p>
+                              <span>DK/A/5879</span>
+                            </div>
+
+                            <img src="../assets/images/india-flag.png" alt="" class="img-fluid">
+                          </div>
+
+                          <div class="pro-view-btn">
+                            <a href="#" class="ms-0">View details</a>
+                            <a href="#" class="me-0">Compare</a>
+                          </div>
+                        </li>
+
+
+                        <li class="diamond-details card-body d-grid align-content-between">
+                          <div>
+                            <p class="dianond-name">Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG VG Faint</p>
+
+                            <ul class="Diamondquality">
+                              <li class="quality-items items-lightBlue ">
+                                VVL Brown
+                              </li>
+                              <li class="quality-items items-Green">
+                                Ex. Luster
+                              </li>
+                              <li class="quality-items items-Green">
+                                100% eyeclean
+                              </li>
+                            </ul>
+
+                            <div class="diamond-details-table row">
+                              <div class="col-5">
+                                <table>
+                                  <tr>
+                                    <td>Certificate :</td>
+                                    <td>508118240</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Shape :</td>
+                                    <td>Round</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Carat :</td>
+                                    <td>0.59</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Color :</td>
+                                    <td>E</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Clarity :</td>
+                                    <td>VVS2</td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div class="col-7">
+                                <table class="CPSFL">
+                                  <tr>
+                                    <td>Cut :</td>
+                                    <td>ID</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Polish :</td>
+                                    <td>EX</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Symmetry :</td>
+                                    <td>EX</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Fluorescence :</td>
+                                    <td>NON</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Lab :</td>
+                                    <td>IGI</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+
+                            <div class="ReturnOpt">
+                              <div class="form-check">
+                                <div class="d-inline-flex align-items-center">
+                                  <input class="form-check-input" type="checkbox" value="" id="Minemarket">
+                                  <label class="form-check-label" for="Minemarket">
+                                    Add return option for
+                                  </label>
+                                  <span>$74.67</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="cta-price d-flex justify-content-between">
+                            <div class="mob-price ">
+                              <p>₹/CT ₹1568.02</p>
+                              <h2>₹5,83,300.99 <span>-12%</span></h2>
+                            </div>
+                            <div class="ctabtn">
+                              <ul class="PriceCart-Ul">
+                                <li class="HoldCart">
+                                  <a href="#" class="Hold-Btn d-none d-lg-flex"><img src="../assets/images/hold.svg"
+                                      alt="" class="img-fluid hold-img d-block d-lg-block d-xl-none"><span
+                                      class="d-none d-xl-block">Hold</span></a>
+                                  <a href="#" class="AddCart-Btn">
+                                    <img src="../assets/images/add-to-cart.svg" alt="" class="img-fluid"><span
+                                      class="d-none d-xl-block"> Add to cart</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+
+                       
+                        <li class="Measurements d-grid align-content-between">
+                          <ul class="d-grid align-content-between">
+                            <li class="diamond-details card-body">
+                              <p class="dianond-name">Measurements</p>
+                              <div class="diamond-details-table row">
+                                <div class="col-6">
+                                  <table>
+                                    <tr>
+                                      <td>Measurements :</td>
+                                      <td>5.35 * 5.37 * 3.29</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Depth :</td>
+                                      <td>61.04%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Table :</td>
+                                      <td>33.8</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Crown Angle :</td>
+                                      <td>33.8</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Crown Height :</td>
+                                      <td>0</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Pavilion Angle :</td>
+                                      <td>40.5</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div class="col-6">
+                                  <table class="PGCEMS">
+                                    <tr>
+                                      <td>Pavilion Depth :</td>
+                                      <td>0</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Girdle :</td>
+                                      <td>55.5%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Culet :</td>
+                                      <td>0.99</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Eye Clean :</td>
+                                      <td>33.8</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Milky :</td>
+                                      <td>0</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Shade :</td>
+                                      <td>0</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </li>
+
+                            <li class="diamond-details name-Update">
+                              <div>
+                                <h4>John Willimson</h4>
+                                <div class="name-flag">
+                                  <div class="flag">
+                                    <img src="../assets/images/india-flag.png" alt="">
+                                  </div>
+                                  <span>India, Gujarat.</span>
+                                </div>
+                              </div>
+                              <div class="updateDate d-flex align-items-center">
+                                <p>Last update :</p>
+                                <span>24/05/2022</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+
+
+                        <li class="diamond-details-3 card-body row">
+                          <p class="dianond-name">Additional Details</p>
+                          <div class="diamond-details-table row">
+                            <div class="col-12">
+                              <table>
+                                <tr>
+                                  <td>Shade :</td>
+                                  <td><a href="#" class="text-decoration-underline">Request Shade</a></td>
+                                </tr>
+                                <tr>
+                                  <td>Milky :</td>
+                                  <td><a href="#" class="text-decoration-underline">Request Milky</a></td>
+                                </tr>
+                                <tr>
+                                  <td>Eyeclean :</td>
+                                  <td><a href="#" class="text-decoration-underline">Request Eyeclean</a></td>
+                                </tr>
+                                <tr>
+                                  <td>Brand :</td>
+                                  <td>Canada mark</td>
+                                </tr>
+                                <tr>
+                                  <td>Origin :</td>
+                                  <td>Angyle</td>
+                                </tr>
+                                <tr>
+                                  <td>Type || :</td>
+                                  <td>A</td>
+                                </tr>
+                                <tr>
+                                  <td>Treatment :</td>
+                                  <td>None</td>
+                                </tr>
+                                <tr>
+                                  <td>Key to Symbol :</td>
+                                  <td>Crystal, Cloud.</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-12 pagination">
+            <ul class="d-flex align-items-center justify-content-center justify-content-md-between">
+              <li class="d-none d-md-block">Displaying 7 out of 120</li>
+              <li>
+                <ul class="d-flex align-items-center">
+                  <li><a href="#"><img src="../assets/images/pagination-left.svg" alt=""></a></li>
+                  <li class="pagination-hover"><a href="#">1</a></li>
+                  <li class="pagination-hover"><a href="#">2</a></li>
+                  <li class="pagination-hover"><a href="#">3</a></li>
+                  <li><a href="#"><img src="../assets/images/paginton-right.svg" alt=""></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+
+    <!-------- Advance Filter -------->
+    <div class="modal fade AdvanceModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Advance Filter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pb-0">
+            <form action="#" name="advancefilter">
+              <div class="row MineTOmarket">
+                <div class="col-12 col-lg-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-lg-4 Sec-heading">
+                      <h5 class="mb-0">Mine to market</h5>
+                    </div>
+                    <div class="col-7">
+                      <div class="form-check">
+                        <label class="form-check-label" for="Minemarket">
+                          Canda Mark
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="Minemarket" name="candamark"
+                          checked />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 Sec-heading ResponsibleJewellery">
+                  <h5 class="mb-0 d-sm-inline-block">
+                    Responsible Jewellery Council
+                  </h5>
+                  <div class="form-check">
+                    <label class="form-check-label" for="Responsible">
+                      Yes
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="" id="Responsible" name="jewellerycouncil" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row MinetoOrigin">
+                <div class="col-12 col-lg-2 Sec-heading">
+                  <h5>Mine to Origin</h5>
+                </div>
+
+                <div class="col-12 col-lg-10">
+                  <ul class="OriginCheck d-flex flex-wrap">
+                    <li class="form-check">
+                      <label class="form-check-label" for="Angola">
+                        Angola
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Angola" name="angola" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Botswana">
+                        Botswana
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Botswana" name="botswana" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Brauna">
+                        Brauna
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Brauna" name="brauna" checked />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Canada">
+                        Canada
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" name="canada" id="Canada" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Lesotho">
+                        Lesotho
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" name="lesotho" id="Lesotho" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Murowa">
+                        Murowa
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" name="murowa" id="Murowa" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Mixed">
+                        Mixed
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Mixed" name="mixed" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Namibia">
+                        Namibia
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Namibia" name="namibia" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Russia">
+                        Russia
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Russia" name="russia" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="South Africa">
+                        South Africa
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="South Africa" checked
+                        name="africa" />
+                    </li>
+
+                    <li class="form-check">
+                      <label class="form-check-label" for="Zimbabwe">
+                        Zimbabwe
+                      </label>
+                      <input class="form-check-input" type="checkbox" value="" id="Zimbabwe" name="Zimbabwe" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border-line"></div>
+
+              <div class="row Inclusions">
+                <div class="col-12 Sec-heading">
+                  <h5 class="checkHeading">Inclusions</h5>
+                </div>
+
+                <div class="col-12 main-Inclusions">
+                  <ul class="Inclusions-Ul">
+                    <li class="InclusionsBox">
+                      <input type="radio" id="InclusionsNone" name="Inclusions" />
+                      <label for="InclusionsNone">NONE</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="InclusionsPinpoint" name="Inclusions" />
+                      <label for="InclusionsPinpoint">Pinpoint -</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="InclusionsHairline" name="Inclusions" checked />
+                      <label for="InclusionsHairline">Hairline -</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="InclusionsMinor" name="Inclusions" />
+                      <label for="InclusionsMinor">Minor -</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="InclusionsMedium" name="Inclusions" />
+                      <label for="InclusionsMedium">Medium -</label>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="ShowTableSide">
+                    Show Table and Sides
+                    <img src="../assets/images/down-arrow.svg" alt="" class="img-fluid ms-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="border-line"></div>
+
+              <div class="row Inclusions">
+                <div class="col-12 Sec-heading">
+                  <h5 class="checkHeading">Open Inclusions</h5>
+                </div>
+
+                <div class="col-12 main-Inclusions">
+                  <ul class="Inclusions-Ul">
+                    <li class="InclusionsBox">
+                      <input type="radio" id="OPNone" name="OpenInclusions" />
+                      <label for="OPNone">NONE</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="OPHairline" name="OpenInclusions" />
+                      <label for="OPHairline">Hairline</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="OPMinor" name="OpenInclusions" />
+                      <label for="OPMinor">Minor</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="OPMedium" name="OpenInclusions" />
+                      <label for="OPMedium">Medium</label>
+                    </li>
+                    <li class="InclusionsBox">
+                      <input type="radio" id="OPHeavy" name="OpenInclusions" />
+                      <label for="OPHeavy">Heavy</label>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="ShowTableSide">
+                    Show Table and Sides
+                    <img src="../assets/images/down-arrow.svg" alt="" class="img-fluid ms-2" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="border-line"></div>
+
+              <div class="row Girdle">
+                <div class="col-12 Sec-heading">
+                  <h5 class="checkHeading">Girdle</h5>
+                </div>
+
+                <div class="col-12 main-Girdle">
+                  <ul class="Girdle-Ul">
+                    <li class="GirdleBox">
+                      <input type="radio" id="EThin" name="Girdle" />
+                      <label for="EThin">Extremely Thin</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="VeryThin" name="Girdle" />
+                      <label for="VeryThin">Very Thin</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="GThin" name="Girdle" />
+                      <label for="GThin">Thin</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="SlightlyThin" name="Girdle" checked />
+                      <label for="SlightlyThin">Slightly Thin</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="GMedium" name="Girdle" />
+                      <label for="GMedium">Medium</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="SlightlyThick" name="Girdle" />
+                      <label for="SlightlyThick">Slightly Thick</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="VeryThick" name="Girdle" />
+                      <label for="VeryThick">Very Thick</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="GThick" name="Girdle" />
+                      <label for="GThick">Thick</label>
+                    </li>
+                    <li class="GirdleBox">
+                      <input type="radio" id="ExtremelyThick" name="Girdle" />
+                      <label for="ExtremelyThick">Extremely Thick</label>
+                    </li>
+                  </ul>
+
+                  <!-- <a href="#" class="ShowTableSide">
+                                Show Table and Sides
+                                <img src="../assets/images/down-arrow.svg" alt="" class="img-fluid ms-2">
+                            </a> -->
+                </div>
+              </div>
+
+              <div class="row HPHT">
+                <div class="col-12 col-lg-2 Sec-heading">
+                  <h5>HPHT</h5>
+                </div>
+
+                <ul class="col-12 col-lg-10 OriginCheck">
+                  <li class="form-check">
+                    <label class="form-check-label" for="HPHT">
+                      Show High Pressure High Temperature diamond (HPHT)
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="" id="HPHT" name="hpht" />
+                  </li>
+                </ul>
+              </div>
+              <div class="border-line"></div>
+
+              <div class="row">
+                <div class="col-12 col-lg-2 Sec-heading">
+                  <h5>Key to Symbol</h5>
+                </div>
+
+                <div class="col-12 col-lg-10">
+                  <div class="row">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-5">
+                      <ul class="ContainsCheck">
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Containschk" id="ContainsY" />
+                            <label class="form-check-label" for="ContainsY">
+                              Contains
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Containschk" id="ContainsN" checked />
+                            <label class="form-check-label" for="ContainsN">
+                              Does not contain
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <ul class="col-12 col-lg-7 OriginCheck">
+                      <li class="mt-4 mt-lg-0 ms-lg-5">
+                        <div class="form-check w-100">
+                          <label class="form-check-label unknownkey" for="unknownkey">
+                            Show diamonds with unknown key to symbols
+                          </label>
+                          <input class="form-check-input" type="checkbox" value="" id="unknownkey" name="keytosymbol"
+                            checked />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="row justify-content-between">
+                    <ul class="col-12 OriginCheck KeytoSymbol">
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolBruise">
+                          Bruise
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolBruise" name="bruise" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolCloud">
+                          Cloud
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolCloud" name="cloud"
+                          checked />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolFeather">
+                          Feather
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolFeather" name="feather" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolTwinning">
+                          Twinning Wisp
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolTwinning" name="twinning" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="LaserDrilling">
+                          Laser Drilling
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="LaserDrilling"
+                          name="laserdrilling" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolIndented">
+                          Indented Inscription
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolIndented"
+                          name="inscription" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolNeedle">
+                          Needle
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolNeedle" name="needle" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolChip">
+                          Chip
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolChip" name="chip" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolCavity">
+                          Cavity
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolCavity" name="cavity" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolEtchChannel">
+                          Etch Channel
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolEtchChannel"
+                          name="etchchannel" checked />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolCrystal">
+                          Crystal
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolCrystal" name="crystal" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolNatural">
+                          Indented Natural
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolNatural"
+                          name="indentednatural" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolKnot">
+                          Knot
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolKnot" name="knot" checked />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolHole">
+                          Laser Drill Hole
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolHole"
+                          name="laserdrillhole" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolPinpoint">
+                          Pinpoint
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolPinpoint" name="pinpoint" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolSurface">
+                          Surface Graining
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolSurface" name="surface" />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="SymbolNatural">
+                          Natural
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolNatural" name="natural" />
+                      </li>
+
+                      <li class="form-check ManufacturingRemnant">
+                        <label class="form-check-label" for="SymbolManufacturing">
+                          Manufacturing Remnant
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolManufacturing"
+                          name="manufacturing" />
+                      </li>
+
+                      <li class="form-check ManufacturingRemnant">
+                        <label class="form-check-label" for="SymbolLaserDrilling">
+                          Internal Laser Drilling
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="SymbolLaserDrilling"
+                          name="internal-laser-drilling" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row diamondsacceptreturns">
+                <div class="col-12 col-lg-2 Sec-heading">
+                  <h5>Return option</h5>
+                </div>
+
+                <div class="col-12 col-lg-7 OriginCheck">
+                  <div class="form-check w-100">
+                    <label class="form-check-label" for="acceptreturns">
+                      Show diamonds that accept returns only
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="" id="acceptreturns" name="acceptreturns" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-line"></div>
+
+              <div class="Dashboard-body p-0">
+                <div class="row form-reset-apply mt-0">
+                  <div class="col-12 d-flex justify-content-center justify-content-lg-start align-content-center">
+                    <ul class="d-flex align-items-center">
+                      <li>
+                        <button>Reset</button>
+                      </li>
+                      <li>
+                        <button type="submit">Apply</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jquery-3.6.0 -->
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.rawgit.com/edenspiekermann/a11y-toggle/master/a11y-toggle.min.js"></script>
+
+  <!-- Coustam js -->
+  <script src="../assets/js/script.js"></script>
+
+  <script>
+
+    $(".like-line").click(function () {
+      $(this).hide();
+      $(this).parent(".prolike").find(".like-fill").show();
+    });
+    $(".like-fill").click(function () {
+      $(this).hide();
+      $(this).parent(".prolike").find(".like-line").show();
+    });
+
+
+
+    for (let i = 0; i < 16; i++) {
+      var tr = '<tr class="list-tr" data-a11y-toggle="expandable-row-' + [i] + '" >' +
+        '<td>' +
+        '<div class="form-check">' +
+        '<input class="form-check-input" type="checkbox" value="">' +
+        '</div>' +
+        '</td>' +
+        '<td>' +
+        '<div class="MEDIA-image">' +
+        '<img src="../assets/images/round-tabel.png" alt="" class="img-fluid table-diamone">' +
+        '<img src="../assets/images/india-flag.png" alt="" class="img-fluid table-flag">' +
+        '<img src="../assets/images/video-play.svg" alt="" class="img-fluid table-video">' +
+        '</div>' +
+        '</td>' +
+        '<td>' +
+        '<span>17305</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>Round</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>0.18</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>D</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>Sl1</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>EX</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>EX</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>EX</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>NON</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>GIA</span>' +
+        '</td>' +
+        '<td class="reportno">' +
+        '<span>6405486221</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>57%</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>59.7%</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>0.99</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>3.69*3.72*2.21</span>' +
+        '</td>' +
+        '<td class="price">' +
+        '<span>₹5,83,300.99</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>₹1,568.02</span>' +
+        '</td>' +
+        '<td>' +
+        '<span>42.55%</span>' +
+        '</td>' +
+        '</tr >' +
+        '<tr id="expandable-row-' + [i] + '" class="expandable-row">' +
+        '<td class="table__cell" colspan="20">' +
+        '<ul class="slide-ul">' +
+        ' <li class="pro-view">' +
+        '<div class="card-image position-relative h-75">' +
+        '<img src="../assets/images/card-diamond-round.png" alt="" class="img-fluid">' +
+        '<div class="Available-Label">' +
+        '<span></span>' +
+        '<p>Available</p>' +
+        '</div>' +
+        '<ul class="haeart-ul">' +
+        '<li class="heart-items">' +
+        '<a class="prolike">' +
+        '<img src="../assets/images/like-line.svg" alt="" class="img-fluid like-line">' +
+        '<img src="../assets/images/like-fill.svg" alt="" class="img-fluid like-fill">' +
+        '</a>' +
+        '</li>' +
+        '</ul>' +
+        '</div>' +
+        '<div class="Stock-li">' +
+        '<div class="StockNo">' +
+        '<p>Stock No. :</p>' +
+        '<span>DK/A/5879</span>' +
+        '</div>' +
+        '<img src="../assets/images/india-flag.png" alt="" class="img-fluid">' +
+        '</div>' +
+        '<div class="pro-view-btn">' +
+        '<a href="#" class="ms-0">View details</a>' +
+        '<a href="#" class="me-0">Compare</a>' +
+        '</div>' +
+        '</li>' +
+        '<li class="diamond-details card-body d-grid align-content-between">' +
+        '<div>' +
+        '<p class="dianond-name">Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG VG Faint</p>' +
+        '<ul class="Diamondquality">' +
+        '<li class="quality-items items-lightBlue ">' +
+        'VVL Brown' +
+        '</li>' +
+        '<li class="quality-items items-Green">' +
+        'Ex. Luster' +
+        '</li>' +
+        '<li class="quality-items items-Green">' +
+        '100% eyeclean' +
+        '</li>' +
+        '</ul >' +
+        '<div class="diamond-details-table row">' +
+        ' <div class="col-5">' +
+        '<table>' +
+        '<tr>' +
+        '<td>Certificate :</td>' +
+        '<td>508118240</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Shape :</td>' +
+        '<td>Round</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Carat :</td>' +
+        '<td>0.59</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Color :</td>' +
+        '<td>E</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Clarity :</td>' +
+        '<td>VVS2</td>' +
+        '</tr>' +
+        '</table >' +
+        '</div >' +
+        '<div class="col-7">' +
+        '<table class="CPSFL">' +
+        '<tr>' +
+        '<td>Cut :</td>' +
+        '<td>ID</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Polish :</td>' +
+        '<td>EX</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Symmetry :</td>' +
+        '<td>EX</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Fluorescence :</td>' +
+        '<td>NON</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Lab :</td>' +
+        '<td>IGI</td>' +
+        '</tr>' +
+        '</table>' +
+        '</div>' +
+        '</div >' +
+        '<div class="ReturnOpt">' +
+        '<div class="form-check">' +
+        '<div class="d-inline-flex align-items-center">' +
+        '<input class="form-check-input" type="checkbox" value="" id="Minemarket">' +
+        '<label class="form-check-label" for="Minemarket">' +
+        'Add return option for' +
+        '</label>' +
+        '<span>$74.67</span>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</div >' +
+        '<div class="cta-price d-flex justify-content-between">' +
+        '<div class="mob-price ">' +
+        '<p>₹/CT ₹1568.02</p>' +
+        '<h2>₹5,83,300.99 <span>-12%</span></h2>' +
+        '</div>' +
+        '<div class="ctabtn">' +
+        '<ul class="PriceCart-Ul">' +
+        '<li class="HoldCart">' +
+        '<a href="#" class="Hold-Btn d-none d-lg-flex"><img src="../assets/images/hold.svg" alt="" class="img-fluid hold-img d-block d-lg-block d-xl-none">' +
+        '<span class="d-none d-xl-block">Hold</span>' +
+        '</a> <a href="#" class="AddCart-Btn"> ' +
+        '<img src="../assets/images/add-to-cart.svg" alt="" class="img-fluid">' +
+        '<span class="d-none d-xl-block"> Add to cart</span>' +
+        '</a>' +
+        '</li >' +
+        '</ul >' +
+        '</div >' +
+        '</div >' +
+        '</li >' +
+        '<li class="Measurements d-grid align-content-between">' +
+        '<ul class="d-grid align-content-between">' +
+        '<li class="diamond-details card-body">' +
+        '<p class="dianond-name">Measurements</p>' +
+        '<div class="diamond-details-table row">' +
+        '<div class="col-6">' +
+        '<table>' +
+        '<tr>' +
+        '<td>Measurements :</td>' +
+        '<td>5.35 * 5.37 * 3.29</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Depth :</td>' +
+        '<td>61.04%</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Table :</td>' +
+        '<td>33.8</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Crown Angle :</td>' +
+        '<td>33.8</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Crown Height :</td>' +
+        '<td>0</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Pavilion Angle :</td>' +
+        '<td>40.5</td>' +
+        '</tr>' +
+        '</table>' +
+        '</div>' +
+        '<div class="col-6">' +
+        '<table class="PGCEMS">' +
+        '<tr>' +
+        ' <td>Pavilion Depth :</td>' +
+        '<td>0</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Girdle :</td>' +
+        '<td>55.5%</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Culet :</td>' +
+        '<td>0.99</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Eye Clean :</td>' +
+        '<td>33.8</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Milky :</td>' +
+        '<td>0</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Shade :</td>' +
+        ' <td>0</td>' +
+        '</tr>' +
+        '</table>' +
+        '</div>' +
+        '</div>' +
+        '</li>' +
+        '<li class="diamond-details name-Update">' +
+        '<div>' +
+        '<h4>John Willimson</h4>' +
+        '<div class="name-flag">' +
+        '<div class="flag">' +
+        '<img src="../assets/images/india-flag.png" alt="">' +
+        '</div>' +
+        '<span>India, Gujarat.</span>' +
+        '</div>' +
+        '</div>' +
+        '<div class="updateDate d-flex align-items-center">' +
+        '<p>Last update :</p>' +
+        '<span>24/05/2022</span>' +
+        '</div>' +
+        '</li>' +
+        '</ul>' +
+        '</li>' +
+        '<li class="diamond-details-3 card-body row">' +
+        '<p class="dianond-name">Additional Details</p>' +
+        '<div class="diamond-details-table row">' +
+        ' <div class="col-12">' +
+        '<table>' +
+        '<tr>' +
+        '<td>Shade :</td>' +
+        '<td><a href="#" class="text-decoration-underline">Request Shade</a></td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Milky :</td>' +
+        '<td><a href="#" class="text-decoration-underline">Request Milky</a></td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Eyeclean :</td>' +
+        '<td><a href="#" class="text-decoration-underline">Request Eyeclean</a></td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Brand :</td>' +
+        '<td>Canada mark</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Origin :</td>' +
+        '<td>Angyle</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Type || :</td>' +
+        '<td>A</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Treatment :</td>' +
+        '<td>None</td>' +
+        '</tr>' +
+        '<tr>' +
+        '<td>Key to Symbol :</td>' +
+        '<td>Crystal, Cloud.</td>' +
+        '</tr>' +
+        '</table >' +
+        '</div >' +
+        '</div >' +
+        '</li >' +
+        '</ul >' +
+        '</td >' +
+        '</tr > '
+
+      $('#tableDataTr').append(tr);
+    }
+  </script>
+
+</body>
+
+</html>

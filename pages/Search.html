@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Search diamond</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="../assets/css/remixicon.css" />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- <div class="back-layer"></div> -->
+    <div class="row top-header align-items-center">
+      <div class="back-layer"></div>
+
+      <div class="col-6">
+        <img src="../assets/images/logo.png" alt="" />
+      </div>
+
+      <div class="col-6">
+        <ul class="d-flex justify-content-end align-items-center user-ul">
+          <li>
+            <a href="#"><img src="../assets/images/bell.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../assets/images/cart.svg" alt="" /></a>
+          </li>
+          <li class="d-none d-lg-block">
+            <a href="#"><img src="../assets/images/user.svg" alt="" /></a>
+          </li>
+          <li class="d-lg-none" id="NavIcon">
+            <a href="#">
+              <img
+                src="../assets/images/menu-icon.svg"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="d-flex">
+      <!-- Side Nav -->
+      <section>
+        <div class="side-nav">
+          <div class="side-nav-menu">
+            <ul class="menu">
+              <li class="">
+                <a href="#">
+                  <img src="../assets/images/home.svg" alt="" />
+                  <img
+                    src="../assets/images/home-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Home</h6>
+                </a>
+              </li>
+              <li>
+                <a href="Search.html" class="menu-active">
+                  <img src="../assets/images/search.svg" alt="" />
+                  <img
+                    src="../assets/images/search-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Search</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/like.svg" alt="" />
+                  <img
+                    src="../assets/images/like-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Favorite</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/note.svg" alt="" />
+                  <img
+                    src="../assets/images/order-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>order</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/save.svg" alt="" />
+                  <img
+                    src="../assets/images/save-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>save</h6>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/images/setting.svg" alt="" />
+                  <img
+                    src="../assets/images/setting-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>setting</h6>
+                </a>
+              </li>
+            </ul>
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <img src="../assets/images/logout.svg" alt="" />
+                  <img
+                    src="../assets/images/logout-sky.svg"
+                    alt=""
+                    class="d-none"
+                  />
+                  <h6>Log Out</h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search Body -->
+      <div class="w-100">
+        <section class="Dashboard-body Search-Diamond pb-0">
+          <form action="#" name="diamondsearch">
+            <!-- Natural Diamonds (1,283,751) -->
+            <div class="row">
+              <div
+                class="col-12 d-xl-flex align-items-center justify-content-between"
+              >
+                <ul class="DashbordFilter">
+                  <li class="NaturalDiamonds">
+                    <div class="boxed">
+                      <input
+                        type="radio"
+                        id="NDiamonds"
+                        name="skills"
+                        checked
+                      />
+                      <label for="NDiamonds"
+                        >Natural Diamonds
+                        <span class="d-none d-sm-block"
+                          >(1,283,751)</span
+                        ></label
+                      >
+
+                      <input type="radio" id="LabDiamonds" name="skills" />
+                      <label for="LabDiamonds">Lab Grown Diamonds</label>
+                    </div>
+                  </li>
+                </ul>
+                <ul
+                  class="DashbordFilter justify-content-center justify-content-lg-start justify-content-xl-between"
+                >
+                  <li class="Modify-search">
+                    <a href="Dashboard.html">Modify Search</a>
+                  </li>
+
+                  <li class="Discount position-relative">
+                    <select class="select" name="discount">
+                      <option value="#">Discount (High to low)</option>
+                      <option value="#">50%</option>
+                      <option value="#">60%</option>
+                      <option value="#">70%</option>
+                      <option value="#">45%</option>
+                    </select>
+                    <img src="../assets/images/arrow-down.svg" alt="" />
+                  </li>
+
+                  <li class="Imagevideo d-none d-lg-block">
+                    <ul class="boxed">
+                      <li>
+                        <input type="radio" id="image" name="Image" checked />
+                        <label for="image">
+                          <img
+                            src="../assets/images/grid-view.svg"
+                            alt=""
+                            class="img-fluid videoLightGrey"
+                          />
+                          <img
+                            src="../assets/images/grid-view-active.svg"
+                            alt=""
+                            class="img-fluid videoblue"
+                          />
+                          <span>Grid View</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="radio" id="Video" name="Image" />
+                        <label for="Video">
+                          <img
+                            src="../assets/images/list-view.svg"
+                            alt=""
+                            class="img-fluid videoLightGrey"
+                          />
+
+                          <img
+                            src="../assets/images/list-view-active.svg"
+                            alt=""
+                            class="img-fluid videoblue"
+                          />
+                          <span>List View</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="AdvanceFilter d-none d-lg-block">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <span class="red-dots"></span>
+                      Advance Filter</a
+                    >
+                  </li>
+                  <li class="AdvanceFilter d-lg-none">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <img
+                        src="../assets/images/advance-filter-icon.svg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <!-- Cards -->
+        <section class="CardSection">
+          <ul class="CardSection-Ul" id="Card-Ul">
+            <!-- <li class="Card-Items">
+                        <div class="card-image position-relative">
+                            <img src="../assets/images/card-diamond-round.png" alt="" class="img-fluid">
+
+                            <div class="Available-Label">
+                                <span class="Available-product"></span>
+                                <p>Available</p>
+                            </div>
+
+                            <ul class="haeart-ul">
+                                <li class="heart-items">
+                                    <a href="#" class="prolike">
+                                        <img src="../assets/images/like-line.svg" alt="" class="img-fluid like-line">
+                                        <img src="../assets/images/like-fill.svg" alt="" class="img-fluid like-fill">
+                                    </a>
+                                </li>
+                                <li class="heart-items">
+                                    <a href="#">
+                                        <img src="../assets/images/image-icon.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="card-body">
+                            <ul class="Diamondquality">
+                                <li class="quality-items items-lightOrange ">
+                                    VVL Brown
+                                </li>
+                                <li class="quality-items items-Green">
+                                    Ex. Luster
+                                </li>
+                                <li class="quality-items items-Green">
+                                    100% eyeclean
+                                </li>
+                            </ul>
+
+                            <div class="ProName">
+                                <h4>Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG VG Faint</h4>
+                            </div>
+
+                            <ul class="SizeMark">
+                                <li class="proSize">
+                                    <p>13.83*13.90*8.48 mm</p>
+                                </li>
+                                <li class="GIAMARK">
+                                    <img src="../assets/images/gia-mark.svg" alt="" class="img-fluid">
+                                </li>
+                            </ul>
+
+                            <div class="border-line"></div>
+
+                            <ul class="TRD">
+                                <li class="TRD-items">
+                                    <p>T: </p>
+                                    <span>60.5%</span>
+                                </li>
+                                <li class="TRD-items">
+                                    <p>R: </p>
+                                    <span>61.1%</span>
+                                </li>
+                                <li class="TRD-items">
+                                    <p>D: </p>
+                                    <span>1 : 1.25</span>
+                                </li>
+                            </ul>
+
+                            <div class="border-line"></div>
+
+                            <ul class="carat-Ul">
+                                <li class="caratPrice">
+                                    <p>₹1568.02</p>
+                                    <span>/CT</span>
+                                </li>
+
+                                <li class="ReturnOpt">
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="Minemarket">
+                                            Add return option for
+                                            <p>$74.67</p>
+                                        </label>
+                                        <input class="form-check-input" type="checkbox" value="" id="Minemarket"
+                                            checked>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="border-line"></div>
+
+                            <ul class="PriceCart-Ul">
+                                <li class="Price">
+                                    <p>Price</p>
+                                    <h4>₹5,83,300.99</h4>
+                                </li>
+
+                                <li class="HoldCart">
+                                    <a href="#" class="Hold-Btn">Hold</a>
+                                    <a href="#" class="AddCart-Btn">
+                                        <img src="../assets/images/add-to-cart.svg" alt="" class="img-fluid">
+                                        Add to cart
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li> -->
+          </ul>
+        </section>
+      </div>
+
+      <!-------- Advance Filter -------->
+      <div
+        class="modal fade AdvanceModal"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Advance Filter</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body pb-0">
+              <form action="#" name="advancefilter">
+                <div class="row MineTOmarket">
+                  <div class="col-12 col-lg-6">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 col-lg-4 Sec-heading">
+                        <h5 class="mb-0">Mine to market</h5>
+                      </div>
+                      <div class="col-7">
+                        <div class="form-check">
+                          <label class="form-check-label" for="Minemarket">
+                            Canda Mark
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="Minemarket"
+                            name="candamark"
+                            checked
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 Sec-heading ResponsibleJewellery">
+                    <h5 class="mb-0 d-sm-inline-block">
+                      Responsible Jewellery Council
+                    </h5>
+                    <div class="form-check">
+                      <label class="form-check-label" for="Responsible">
+                        Yes
+                      </label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="Responsible"
+                        name="jewellerycouncil"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row MinetoOrigin">
+                  <div class="col-12 col-lg-2 Sec-heading">
+                    <h5>Mine to Origin</h5>
+                  </div>
+
+                  <div class="col-12 col-lg-10">
+                    <ul class="OriginCheck d-flex flex-wrap">
+                      <li class="form-check">
+                        <label class="form-check-label" for="Angola">
+                          Angola
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Angola"
+                          name="angola"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Botswana">
+                          Botswana
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Botswana"
+                          name="botswana"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Brauna">
+                          Brauna
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Brauna"
+                          name="brauna"
+                          checked
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Canada">
+                          Canada
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          name="canada"
+                          id="Canada"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Lesotho">
+                          Lesotho
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          name="lesotho"
+                          id="Lesotho"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Murowa">
+                          Murowa
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          name="murowa"
+                          id="Murowa"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Mixed">
+                          Mixed
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Mixed"
+                          name="mixed"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Namibia">
+                          Namibia
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Namibia"
+                          name="namibia"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Russia">
+                          Russia
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Russia"
+                          name="russia"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="South Africa">
+                          South Africa
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="South Africa"
+                          checked
+                          name="africa"
+                        />
+                      </li>
+
+                      <li class="form-check">
+                        <label class="form-check-label" for="Zimbabwe">
+                          Zimbabwe
+                        </label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="Zimbabwe"
+                          name="Zimbabwe"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="border-line"></div>
+
+                <div class="row Inclusions">
+                  <div class="col-12 Sec-heading">
+                    <h5 class="checkHeading">Inclusions</h5>
+                  </div>
+
+                  <div class="col-12 main-Inclusions">
+                    <ul class="Inclusions-Ul">
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="InclusionsNone"
+                          name="Inclusions"
+                        />
+                        <label for="InclusionsNone">NONE</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="InclusionsPinpoint"
+                          name="Inclusions"
+                        />
+                        <label for="InclusionsPinpoint">Pinpoint -</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="InclusionsHairline"
+                          name="Inclusions"
+                          checked
+                        />
+                        <label for="InclusionsHairline">Hairline -</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="InclusionsMinor"
+                          name="Inclusions"
+                        />
+                        <label for="InclusionsMinor">Minor -</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="InclusionsMedium"
+                          name="Inclusions"
+                        />
+                        <label for="InclusionsMedium">Medium -</label>
+                      </li>
+                    </ul>
+
+                    <a href="#" class="ShowTableSide">
+                      Show Table and Sides
+                      <img
+                        src="../assets/images/down-arrow.svg"
+                        alt=""
+                        class="img-fluid ms-2"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="border-line"></div>
+
+                <div class="row Inclusions">
+                  <div class="col-12 Sec-heading">
+                    <h5 class="checkHeading">Open Inclusions</h5>
+                  </div>
+
+                  <div class="col-12 main-Inclusions">
+                    <ul class="Inclusions-Ul">
+                      <li class="InclusionsBox">
+                        <input type="radio" id="OPNone" name="OpenInclusions" />
+                        <label for="OPNone">NONE</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="OPHairline"
+                          name="OpenInclusions"
+                        />
+                        <label for="OPHairline">Hairline</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="OPMinor"
+                          name="OpenInclusions"
+                        />
+                        <label for="OPMinor">Minor</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="OPMedium"
+                          name="OpenInclusions"
+                        />
+                        <label for="OPMedium">Medium</label>
+                      </li>
+                      <li class="InclusionsBox">
+                        <input
+                          type="radio"
+                          id="OPHeavy"
+                          name="OpenInclusions"
+                        />
+                        <label for="OPHeavy">Heavy</label>
+                      </li>
+                    </ul>
+
+                    <a href="#" class="ShowTableSide">
+                      Show Table and Sides
+                      <img
+                        src="../assets/images/down-arrow.svg"
+                        alt=""
+                        class="img-fluid ms-2"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="border-line"></div>
+
+                <div class="row Girdle">
+                  <div class="col-12 Sec-heading">
+                    <h5 class="checkHeading">Girdle</h5>
+                  </div>
+
+                  <div class="col-12 main-Girdle">
+                    <ul class="Girdle-Ul">
+                      <li class="GirdleBox">
+                        <input type="radio" id="EThin" name="Girdle" />
+                        <label for="EThin">Extremely Thin</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="VeryThin" name="Girdle" />
+                        <label for="VeryThin">Very Thin</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="GThin" name="Girdle" />
+                        <label for="GThin">Thin</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input
+                          type="radio"
+                          id="SlightlyThin"
+                          name="Girdle"
+                          checked
+                        />
+                        <label for="SlightlyThin">Slightly Thin</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="GMedium" name="Girdle" />
+                        <label for="GMedium">Medium</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="SlightlyThick" name="Girdle" />
+                        <label for="SlightlyThick">Slightly Thick</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="VeryThick" name="Girdle" />
+                        <label for="VeryThick">Very Thick</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="GThick" name="Girdle" />
+                        <label for="GThick">Thick</label>
+                      </li>
+                      <li class="GirdleBox">
+                        <input type="radio" id="ExtremelyThick" name="Girdle" />
+                        <label for="ExtremelyThick">Extremely Thick</label>
+                      </li>
+                    </ul>
+
+                    <!-- <a href="#" class="ShowTableSide">
+                                Show Table and Sides
+                                <img src="../assets/images/down-arrow.svg" alt="" class="img-fluid ms-2">
+                            </a> -->
+                  </div>
+                </div>
+
+                <div class="row HPHT">
+                  <div class="col-12 col-lg-2 Sec-heading">
+                    <h5>HPHT</h5>
+                  </div>
+
+                  <ul class="col-12 col-lg-10 OriginCheck">
+                    <li class="form-check">
+                      <label class="form-check-label" for="HPHT">
+                        Show High Pressure High Temperature diamond (HPHT)
+                      </label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="HPHT"
+                        name="hpht"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="border-line"></div>
+
+                <div class="row">
+                  <div class="col-12 col-lg-2 Sec-heading">
+                    <h5>Key to Symbol</h5>
+                  </div>
+
+                  <div class="col-12 col-lg-10">
+                    <div class="row">
+                      <div class="col-12 col-sm-8 col-md-6 col-lg-5">
+                        <ul class="ContainsCheck">
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="Containschk"
+                                id="ContainsY"
+                              />
+                              <label class="form-check-label" for="ContainsY">
+                                Contains
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="Containschk"
+                                id="ContainsN"
+                                checked
+                              />
+                              <label class="form-check-label" for="ContainsN">
+                                Does not contain
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <ul class="col-12 col-lg-7 OriginCheck">
+                        <li class="mt-4 mt-lg-0 ms-lg-5">
+                          <div class="form-check w-100">
+                            <label
+                              class="form-check-label unknownkey"
+                              for="unknownkey"
+                            >
+                              Show diamonds with unknown key to symbols
+                            </label>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="unknownkey"
+                              name="keytosymbol"
+                              checked
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="row justify-content-between">
+                      <ul class="col-12 OriginCheck KeytoSymbol">
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolBruise">
+                            Bruise
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolBruise"
+                            name="bruise"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolCloud">
+                            Cloud
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolCloud"
+                            name="cloud"
+                            checked
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolFeather">
+                            Feather
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolFeather"
+                            name="feather"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolTwinning">
+                            Twinning Wisp
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolTwinning"
+                            name="twinning"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="LaserDrilling">
+                            Laser Drilling
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="LaserDrilling"
+                            name="laserdrilling"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolIndented">
+                            Indented Inscription
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolIndented"
+                            name="inscription"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolNeedle">
+                            Needle
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolNeedle"
+                            name="needle"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolChip">
+                            Chip
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolChip"
+                            name="chip"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolCavity">
+                            Cavity
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolCavity"
+                            name="cavity"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label
+                            class="form-check-label"
+                            for="SymbolEtchChannel"
+                          >
+                            Etch Channel
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolEtchChannel"
+                            name="etchchannel"
+                            checked
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolCrystal">
+                            Crystal
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolCrystal"
+                            name="crystal"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolNatural">
+                            Indented Natural
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolNatural"
+                            name="indentednatural"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolKnot">
+                            Knot
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolKnot"
+                            name="knot"
+                            checked
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolHole">
+                            Laser Drill Hole
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolHole"
+                            name="laserdrillhole"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolPinpoint">
+                            Pinpoint
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolPinpoint"
+                            name="pinpoint"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolSurface">
+                            Surface Graining
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolSurface"
+                            name="surface"
+                          />
+                        </li>
+
+                        <li class="form-check">
+                          <label class="form-check-label" for="SymbolNatural">
+                            Natural
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolNatural"
+                            name="natural"
+                          />
+                        </li>
+
+                        <li class="form-check ManufacturingRemnant">
+                          <label
+                            class="form-check-label"
+                            for="SymbolManufacturing"
+                          >
+                            Manufacturing Remnant
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolManufacturing"
+                            name="manufacturing"
+                          />
+                        </li>
+
+                        <li class="form-check ManufacturingRemnant">
+                          <label
+                            class="form-check-label"
+                            for="SymbolLaserDrilling"
+                          >
+                            Internal Laser Drilling
+                          </label>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="SymbolLaserDrilling"
+                            name="internal-laser-drilling"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row diamondsacceptreturns">
+                  <div class="col-12 col-lg-2 Sec-heading">
+                    <h5>Return option</h5>
+                  </div>
+
+                  <div class="col-12 col-lg-7 OriginCheck">
+                    <div class="form-check w-100">
+                      <label class="form-check-label" for="acceptreturns">
+                        Show diamonds that accept returns only
+                      </label>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="acceptreturns"
+                        name="acceptreturns"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="border-line"></div>
+
+                <div class="Dashboard-body p-0">
+                  <div class="row form-reset-apply mt-0">
+                    <div
+                      class="col-12 d-flex justify-content-center justify-content-lg-start align-content-center"
+                    >
+                      <ul class="d-flex align-items-center">
+                        <li>
+                          <button>Reset</button>
+                        </li>
+                        <li>
+                          <button type="submit">Apply</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery-3.6.0 -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Coustam js -->
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        for (i = 0; i <= 15; i++) {
+          if (i % 2 == 0) {
+            var DiamondImage = "../assets/images/card-diamond-round.png";
+            $("#Card-Ul").append(cardItems);
+            var b = "Available-Label";
+            var ProStatus = "Available";
+          } else {
+            var DiamondImage = "../assets/images/yellow.png";
+            $("#Card-Ul").append(cardItems);
+            var b = "NotAvailable-Label";
+            var ProStatus = "Not-Available";
+          }
+
+          var cardItems =
+            '<li class="Card-Items">' +
+            '<div class="card-image position-relative">' +
+            '<img src="' +
+            DiamondImage +
+            '" alt="" class="img-fluid">' +
+            ' <div class="' +
+            b +
+            '">' +
+            "<span></span>" +
+            "<p>" +
+            ProStatus +
+            "</p>" +
+            "</div>" +
+            '<ul class="haeart-ul d-none d-md-block">' +
+            '<li class="heart-items">' +
+            '<a class="prolike">' +
+            '<img src="../assets/images/like-line.svg" alt="" class="img-fluid like-line">' +
+            '<img src="../assets/images/like-fill.svg" alt="" class="img-fluid like-fill">' +
+            "</a>" +
+            "</li>" +
+            '<li class="heart-items">' +
+            '<a class="d-inline-block">' +
+            '<img src="../assets/images/image-icon.svg" alt="" class="img-fluid">' +
+            "</a>" +
+            "</li>" +
+            "</ul>" +
+            "</div >" +
+            '<div class="card-body">' +
+            '<ul class="Diamondquality d-none d-md-flex">' +
+            '<li class="quality-items items-lightBlue ">VVL Brown</li>' +
+            '<li class="quality-items items-Pink">Ex.Luster</li>' +
+            '<li class="quality-items items-Pink">100 % eyeclean</li>' +
+            "</ul>" +
+            '<div class="ProName">' +
+            "<h4>Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG VG Faint</h4>" +
+            "</div>" +
+            '<ul class="SizeMark">' +
+            '<li class="proSize">' +
+            '<p class="d-none d-md-block">13.83*13.90*8.48 mm</p>' +
+            '<p class="d-md-none">DK/A/5879</p>' +
+            "</li>" +
+            '<li class="GIAMARK">' +
+            '<img src="../assets/images/gia-mark.svg" alt="" class="img-fluid">' +
+            "</li>" +
+            "</ul>" +
+            '<div class="border-line d-none d-md-block"></div>' +
+            '<ul class="TRD d-none d-md-flex">' +
+            '<li class="TRD-items">' +
+            "<p>T: </p>" +
+            "<span>60.5%</span>" +
+            "</li>" +
+            '<li class="TRD-items">' +
+            "<p>R: </p>" +
+            "<span>61.1%</span>" +
+            "</li>" +
+            '<li class="TRD-items">' +
+            "<p>D: </p>" +
+            "<span>1 : 1.25</span>" +
+            "</li>" +
+            "</ul>" +
+            '<div class="border-line d-none d-md-block"></div>' +
+            '<ul class="carat-Ul d-none d-md-flex">' +
+            '<li class="caratPrice">' +
+            "<p>₹1568.02</p>" +
+            "<span>/CT</span>" +
+            "</li>" +
+            '<li class="ReturnOpt">' +
+            '<div class="form-check">' +
+            '<div class="d-inline-flex align-items-center">' +
+            '<label class="form-check-label" for="Minemarket">Add return option for' +
+            "</label>" +
+            "<span>$74.67</span>" +
+            "</div>" +
+            '<input class="form-check-input" type="checkbox" value="" id="Minemarket">' +
+            "</div>" +
+            "</li >" +
+            "</ul >" +
+            '<div class="border-line"></div>' +
+            '<ul class="PriceCart-Ul">' +
+            '<li class="Price">' +
+            "<p>-12%</p>" +
+            '<p class="d-md-none">₹/CT ₹1568.02</p>' +
+            "<h4>₹5,83,300.99</h4>" +
+            "</li>" +
+            '<li class="HoldCart">' +
+            '<a href="#" class="Hold-Btn d-none d-lg-flex">' +
+            '<img src="../assets/images/hold.svg" alt="" class="img-fluid hold-img d-block d-lg-block d-xl-none">' +
+            '<span class="d-none d-xl-block">Hold</span></a>' +
+            '<a href="#" class="AddCart-Btn">' +
+            '<img src="../assets/images/add-to-cart.svg" alt="" class="img-fluid"> <span class="d-none d-xl-block">Add to cart</span></a>' +
+            "</li>" +
+            "</ul>" +
+            "</div >" +
+            "</li > ";
+        }
+
+        $(".like-line").click(function () {
+          $(this).hide();
+          $(this).parent(".prolike").find(".like-fill").show();
+        });
+        $(".like-fill").click(function () {
+          $(this).hide();
+          $(this).parent(".prolike").find(".like-line").show();
+        });
+      });
+    </script>
+  </body>
+</html>

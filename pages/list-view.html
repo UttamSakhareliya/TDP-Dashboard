@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>List View</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="../assets/css/remixicon.css">
+
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- <div class="back-layer"></div> -->
+    <div class="row top-header align-items-center">
+        <div class="back-layer"></div>
+
+        <div class="col-6">
+            <img src="../assets/images/logo.png" alt="">
+        </div>
+
+        <div class="col-6">
+            <ul class="d-flex justify-content-end align-items-center user-ul">
+                <li>
+                    <a href="#"><img src="../assets/images/bell.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../assets/images/cart.svg" alt=""></a>
+                </li>
+                <li class="d-none d-lg-block">
+                    <a href="#"><img src="../assets/images/user.svg" alt=""></a>
+                </li>
+                <li class="d-lg-none" id="NavIcon">
+                    <a href="#">
+                        <img src="../assets/images/menu-icon.svg" alt="" class="img-fluid">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="d-flex">
+        <!-- Side Nav -->
+        <section>
+            <div class="side-nav">
+                <div class="side-nav-menu">
+                    <ul class="menu">
+                        <li class="">
+                            <a href="#">
+                                <img src="../assets/images/home.svg" alt="">
+                                <img src="../assets/images/home-sky.svg" alt="" class="d-none">
+                                <h6>Home</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Search.html" class="menu-active">
+                                <img src="../assets/images/search.svg" alt="">
+                                <img src="../assets/images/search-sky.svg" alt="" class="d-none">
+                                <h6>Search</h6>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/like.svg" alt="">
+                                <img src="../assets/images/like-sky.svg" alt="" class="d-none">
+                                <h6>Favorite</h6>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/note.svg" alt="">
+                                <img src="../assets/images/order-sky.svg" alt="" class="d-none">
+                                <h6>order</h6>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/save.svg" alt="">
+                                <img src="../assets/images/save-sky.svg" alt="" class="d-none">
+                                <h6>save</h6>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/setting.svg" alt="">
+                                <img src="../assets/images/setting-sky.svg" alt="" class="d-none">
+                                <h6>setting</h6>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/images/logout.svg" alt="">
+                                <img src="../assets/images/logout-sky.svg" alt="" class="d-none">
+                                <h6>Log Out</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Body -->
+        <div class="w-100 list-view">
+            <!-- Diamond View -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10">
+                    <a href="#" class="ps-4 pt-4 d-flex align-content-center">
+                        <span class=" me-3"><img src="../assets/images/Combined-Shape.svg" alt=""></span>
+                        <span class="d-none d-md-block">
+                            <h4>Back to result</h4>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="row Diamond-view-body justify-content-center">
+                <div class="col-12 col-md-auto diamond-list-pading d-none d-md-block">
+                    <div class="diamond-list mt-4 mt-md-0" id="thumbnails">
+                        <a href="#diamond1" class="button">
+                            <img src="../assets/images/list-1.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="#diamond2" class="button">
+                            <img src="../assets/images/list-2.png" alt="" class="img-fluid">
+                        </a>
+                        <a href="#diamond3" class="button position-relative">
+                            <img src="../assets/images/list-1.png" alt="" class="img-fluid">
+                            <div class="video-layer">
+                                <img src="../assets/images/play.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#diamond4" class="button">
+                            <img src="../assets/images/list-3.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-9 col-xl-5 list-view-zoom-padding">
+                    <div class="list-view-zoom position-relative">
+                        <ul class="diamond-list mt-4 mt-md-0 owl-carousel owl-theme" id="thumbnails">
+                            <div class="item d-flex align-items-center justify-content-center" data-hash="diamond1">
+                                <img src="../assets/images/list-1.png" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="item d-flex align-items-center justify-content-center" data-hash="diamond2">
+                                <img src="../assets/images/list-2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-center" data-hash="diamond3">
+                                <img src="../assets/images/list-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="item d-flex align-items-center justify-content-center" data-hash="diamond4">
+                                <img src="../assets/images/list-3.png" alt="" class="img-fluid">
+                            </div>
+
+                        </ul>
+                        <ul class="haeart-ul d-flex justify-content-end justify-content-md-between">
+                            <li class="Available-Label-view">
+                                <p></p>
+                            </li>
+                            <ul>
+                                <li class="heart-items">
+                                    <a class="prolike">
+                                        <img src="../assets/images/like-line.svg" alt="" class="img-fluid like-line">
+                                        <img src="../assets/images/like-fill.svg" alt="" class="img-fluid like-fill">
+                                    </a>
+                                </li>
+                                <li class="heart-items">
+                                    <a class="d-inline-block">
+                                        <img src="../assets/images/image-icon.svg" alt="" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-xl-5 mt-4 mt-xl-0 Diamod-details-mob">
+                    <ul class="d-flex  align-items-center justify-content-md-between country-code">
+                        <li class="Available-Label-view d-md-none">
+                            <p></p>
+                        </li>
+                        <li class="d-flex align-items-center ">
+                            <img src="../assets/images/country-flag.png" alt="" class="me-3">
+                            <h4>DK/A/5879</h4>
+                        </li>
+                        <li class="d-none d-md-block">
+                            <img src="../assets/images/gia-mark.svg" alt="" height="25px">
+                        </li>
+                    </ul>
+
+                    <div class="card-body p-0">
+                        <ul class="Diamondquality">
+                            <li class="quality-items items-lightBlue ">
+                                VVL Brown
+                            </li>
+                            <li class="quality-items items-Pink">
+                                Ex. Luster
+                            </li>
+                            <li class="quality-items items-Pink">
+                                100% eyeclean
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Diamod-details">
+                        <h3>Oval 3.72ct Fancy Deep Brownish Orangey Yellow l1 VG VG Faint</h3>
+                        <h4 class="d-none d-md-block">₹/CT ₹1568.02</h4>
+
+                        <ul
+                            class="AdvanceModal hold-cart d-flex justify-content-between justify-content-md-start align-items-center">
+                            <li class="price-rate d-none d-md-flex align-items-center">
+                                <span>₹5,83,300.99</span>
+                                <span>-12%</span>
+                            </li>
+                            <li class="form-check">
+                                <label class="form-check-label" for="SymbolFeather">
+                                    Add return option for <span>$74.67</span>
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="SymbolFeather"
+                                    name="feather">
+                            </li>
+
+                            <li class="col-3 d-md-none"><a href="#">Hold</a></li>
+                        </ul>
+
+                        <ul class="diamond-filter d-none d-md-flex align-items flex-wrap">
+                            <li>
+                                <p>Shape</p>
+                                <p>Round</p>
+                            </li>
+                            <li>
+                                <p>Carat</p>
+                                <p>0.59</p>
+                            </li>
+                            <li>
+                                <p>Color</p>
+                                <p>Brownish</p>
+                            </li>
+                            <li>
+                                <p>Clarity</p>
+                                <p>VVS 2</p>
+                            </li>
+                            <li>
+                                <p>Cut</p>
+                                <p>ID</p>
+                            </li>
+                            <li>
+                                <p>Polish</p>
+                                <p>EX</p>
+                            </li>
+                            <li>
+                                <p>Symmetry</p>
+                                <p>EX</p>
+                            </li>
+                            <li>
+                                <p>Certificate</p>
+                                <p>GIA</p>
+                            </li>
+                        </ul>
+
+                        <ul class="row  hold-cart">
+                            <li class="col-3 d-none d-md-block"><a href="#">Hold</a></li>
+                            <li class="col-12 mobAddToCart col-md-9 d-flex align-items-center justify-content-between">
+                                <div class="mob-price d-md-none">
+                                    <p>₹/CT ₹1568.02</p>
+                                    <h2>₹5,83,300.99 <span>-12%</span></h2>
+                                </div>
+                                <a href="#"><img src="../assets/images/shopping-cart.svg" alt="">Add to
+                                    cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row Diamond-view-body Diamond-view-body-padding justify-content-center">
+                <div class="col-12 DiamondDetails">
+                    <p>Diamond Details</p>
+                </div>
+
+                <div class="col-12 col-md-6 DiamondDetails-table DiamondDetails-table-mob">
+                    <table class="w-100">
+                        <tbody>
+                            <tr>
+                                <td colspan="4">Certificate :</td>
+                                <td colspan="4">508118240</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Shape :</td>
+                                <td colspan="4">Round</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Carat :</td>
+                                <td colspan="4">0.59</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Color :</td>
+                                <td colspan="4">Brownish</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Clarity :</td>
+                                <td colspan="4">VVS2</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Cut :</td>
+                                <td colspan="4">Rare Carat Ideal</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Polish :</td>
+                                <td colspan="4">Very Good</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Symmetry :</td>
+                                <td colspan="4">Excellent</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Fluorescence :</td>
+                                <td colspan="4">None</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Lab :</td>
+                                <td colspan="4">IGI</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Supplier Details :</td>
+                                <td colspan="4">John Willimson <span><img src="../assets/images/country-flag-table.png"
+                                            alt=""></span> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Last update :</td>
+                                <td colspan="4">24/05/2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="col-12 DiamondDetails d-md-none">
+                    <p>Measurements</p>
+                </div>
+                <div class="col-12 col-md-6 DiamondDetails-table">
+                    <table class="w-100">
+                        <tbody>
+                            <tr>
+                                <td colspan="4">Measurements :</td>
+                                <td colspan="4">5.35 * 5.37 * 3.29</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Depth :</td>
+                                <td colspan="4">61.04%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Table :</td>
+                                <td colspan="4">55.5%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Crown Angle :</td>
+                                <td colspan="4">33.8</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Crown Height :</td>
+                                <td colspan="4">0</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Pavilion Angle :</td>
+                                <td colspan="4">40.5 </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Pavilion Depth :</td>
+                                <td colspan="4">0</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Girdle :</td>
+                                <td colspan="4">55.5%</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Culet :</td>
+                                <td colspan="4">0.99</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Eye Clean :</td>
+                                <td colspan="4">33.8</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Milky :</td>
+                                <td colspan="4">0</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Shade :</td>
+                                <td colspan="4">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile User Upadate -->
+                <div class="col-12 d-md-none">
+                    <ul class="d-flex align-items-center justify-content-between user-upadate">
+                        <li>
+                            <p>John Willimson</p>
+                            <p><img src="../assets/images/country-flag-table.png" alt="" class="me-2">India, Gujarat.
+                            </p>
+                        </li>
+
+                        <li class="d-flex align-items-center user-upadate-date">
+                            <p>Last update :</p>
+                            <p>24/05/2022</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row Diamond-view-body Diamond-view-body-padding justify-content-center d-none d-md-flex">
+                <div class="col-12 DiamondDetails">
+                    <p>Additional Details</p>
+                </div>
+
+                <div class="col-12 col-md-6 DiamondDetails-table DiamondDetails-table-mob">
+                    <table class="w-100">
+                        <tbody>
+                            <tr>
+                                <td colspan="4">Shade :</td>
+                                <td colspan="4">Request Shade</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Milky :</td>
+                                <td colspan="4">Request Milky</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Eyeclean :</td>
+                                <td colspan="4">Request Eyeclean</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Brand :</td>
+                                <td colspan="4">Canada mark</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="col-12 DiamondDetails d-md-none">
+                    <p>Measurements</p>
+                </div>
+                <div class="col-12 col-md-6 DiamondDetails-table">
+                    <table class="w-100">
+                        <tbody>
+                            <tr>
+                                <td colspan="4">Origin :</td>
+                                <td colspan="4">Angyle</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Type || :</td>
+                                <td colspan="4">A</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Treatment :</td>
+                                <td colspan="4">None</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Key to symbol :</td>
+                                <td colspan="4">Crystal, Cloud.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile User Upadate -->
+                <div class="col-12 d-md-none">
+                    <ul class="d-flex align-items-center justify-content-between user-upadate">
+                        <li>
+                            <p>John Willimson</p>
+                            <p><img src="../assets/images/country-flag-table.png" alt="" class="me-2">India, Gujarat.
+                            </p>
+                        </li>
+
+                        <li class="d-flex align-items-center user-upadate-date">
+                            <p>Last update :</p>
+                            <p>24/05/2022</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jquery-3.6.0 -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/owl.carousel.min.js"></script>
+
+    <!-- Coustam js -->
+    <script src="../assets/js/script.js"></script>
+
+
+    <script>
+        $('.like-line').click(function () {
+            $(this).hide();
+            $(this).parent('.prolike').find('.like-fill').show();
+        });
+        $('.like-fill').click(function () {
+            $(this).hide();
+            $(this).parent('.prolike').find('.like-line').show();
+
+        });
+
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: false,
+            center: true,
+            margin: 10,
+            URLhashListener: true,
+            startPosition: 'URLHash',
+        });
+
+    </script>
+</body>
+
+</html>
